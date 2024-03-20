@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behavior</title>
+    <style>
+        body {
+            background-color: rgba(46, 67, 87, 1);
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(66, 96, 124);
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item {
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            margin-right: 10px;
+        }
+        .menu-item a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: border-bottom 0.3s ease; /* Добавление плавного перехода для подчеркивания */
+        }
+        .menu-item a:hover {
+            border-bottom: 2px solid #ffffff; /* Добавление подчеркивания белой линией при наведении */
+        }
+        .quote {
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: underline red;
+        }
+        .title {
+            color: aliceblue;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: #b3b3b3;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 275px;
+            height: 167px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card button {
+            background-color: #333; /* Светло-темный цвет кнопки */
+            color: #ffffff;
+            border: none;
+            padding: 20px; /* Увеличенный размер кнопки */
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-item"><a href="#tests">Тесты</a></div>
+            <div class="menu-item"><a href="#distortions">Искажения</a></div>
+            <div class="menu-item"><a href="#audio-trainings">Аудиотренинги</a></div>
+        </div>
+        <div>
+            <img src="Vector.png" alt="Изображение" style="margin-top: 50px;">
+        </div>
+        <div class="quote">
+            "Признание проблемы - половина успеха в её разрешении." - Зигмунд Фрейд
+        </div>
+        <section id="tests">
+            <div class="title">Психологические тесты</div>
+            <div class="card">
+                <img src="Group 5 (1).png" alt="Тест 1">
+                <button><a href="test.html" style="text-decoration: none; color: inherit;">Перейти</a></button>
+            </div>
+            <div class="card">
+                <img src="Group 6.png" alt="Тест 2">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 7.png" alt="Тест 3">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 8.png" alt="Тест 4">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 9.png" alt="Тест 5">
+                <button>Перейти</button>
+            </div>
+        </section>
+        <section id="distortions">
+            <div class="title">Когнитивные искажения</div>
+            <div class="card">
+                <img src="Group 10.png"
+                alt="Искажение 1">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 11.png" alt="Искажение 2">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 12.png" alt="Искажение 3">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 13.png" alt="Искажение 4">
+                <button>Перейти</button>
+            </div>
+        </section>
+        <section id="audio-trainings">
+            <div class="title">Аудиотренинги</div>
+            <div class="card">
+                <img src="Group 14.png" alt="Аудиотренинг 1">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 15.png" alt="Аудиотренинг 2">
+                <button>Перейти</button>
+            </div>
+            <div class="card">
+                <img src="Group 16.png" alt="Аудиотренинг 3">
+                <button>Перейти</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
