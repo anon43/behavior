@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по акцентуации личности</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(46, 67, 87, 1);
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            margin-bottom: 20px;
+        }
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2E4357;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        label:hover {
+            background-color: #49637D;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: #4CAF50;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div style="text-align: center;">
+            <img src="Group 7.1.png" alt="Test Image" style="width:auto; margin: 20px;">
+        </div>
+        <div class="container">
+            <h1>Тест по акцентуации личности</h1>
+            <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                <p style="margin: 0; color: white;">Акцентуация личности — это находящаяся в пределах клинической нормы особенность характера, при которой отдельные его черты чрезмерно усилены.</p>
+            </div>
+            <ol>
+                <li class="question">
+                    <span>Является ли ваше настроение в общем веселым и беззаботным?</span><br>
+                    <input type="radio" id="q1_yes" name="q1" value="yes">
+                    <label for="q1_yes">Да</label>
+                    <input type="radio" id="q1_no" name="q1" value="no">
+                    <label for="q1_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Восприимчивы ли вы к обидам?</span><br>
+                    <input type="radio" id="q2_yes" name="q2" value="yes">
+                    <label for="q2_yes">Да</label>
+                    <input type="radio" id="q2_no" name="q2" value="no">
+                    <label for="q2_no">Нет</label>
+                </li>
+                <!-- Добавьте остальные вопросы аналогично -->
+                <li class="question">
+                    <span>Случалось ли вам иногда быстро заплакать?</span><br>
+                    <input type="radio" id="q3_yes" name="q3" value="yes">
+                    <label for="q3_yes">Да</label>
+                    <input type="radio" id="q3_no" name="q3" value="no">
+                    <label for="q3_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Всегда ли вы считаете себя правым в том деле, которое делаете, и вы не успокоитесь, пока не убедитесь в этом?</span><br>
+                    <input type="radio" id="q4_yes" name="q4" value="yes">
+                    <label for="q4_yes">Да</label>
+                    <input type="radio" id="q4_no" name="q4" value="no">
+                    <label for="q4_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Считаете ли вы себя более смелым, чем в детском возрасте?</span><br>
+                    <input type="radio" id="q5_yes" name="q5" value="yes">
+                    <label for="q5_yes">Да</label>
+                    <input type="radio" id="q5_no" name="q5" value="no">
+                    <label for="q5_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Может ли ваше настроение меняться от глубокой радости до глубокой печали?</span><br>
+                    <input type="radio" id="q6_yes" name="q6" value="yes">
+                    <label for="q6_yes">Да</label>
+                    <input type="radio" id="q6_no" name="q6" value="no">
+                    <label for="q6_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Находитесь ли вы в компании в центре внимания?</span><br>
+                    <input type="radio" id="q7_yes" name="q7" value="yes">
+                    <label for="q7_yes">Да</label>
+                    <input type="radio" id="q7_no" name="q7" value="no">
+                    <label for="q7_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Бывают ли у вас дни, когда вы без достаточных оснований находитесь в угрюмом и раздражительном настроении и ни с кем не хотите разговаривать?</span><br>
+                    <input type="radio" id="q8_yes" name="q8" value="yes">
+                    <label for="q8_yes">Да</label>
+                    <input type="radio" id="q8_no" name="q8" value="no">
+                    <label for="q8_no">Нет</label>
+                </li>
+                <liclass="question">
+                    <span>Серьезный ли вы человек?</span><br>
+                    <input type="radio" id="q9_yes" name="q9" value="yes">
+                    <label for="q9_yes">Да</label>
+                    <input type="radio" id="q9_no" name="q9" value="no">
+                    <label for="q9_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Можете ли вы сильно воодушевиться?</span><br>
+                    <input type="radio" id="q10_yes" name="q10" value="yes">
+                    <label for="q10_yes">Да</label>
+                    <input type="radio" id="q10_no" name="q10" value="no">
+                    <label for="q10_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Предприимчивы ли вы?</span><br>
+                    <input type="radio" id="q11_yes" name="q11" value="yes">
+                    <label for="q11_yes">Да</label>
+                    <input type="radio" id="q11_no" name="q11" value="no">
+                    <label for="q11_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Быстро ли вы забываете, если вас кто-нибудь обидит?</span><br>
+                    <input type="radio" id="q12_yes" name="q12" value="yes">
+                    <label for="q12_yes">Да</label>
+                    <input type="radio" id="q12_no" name="q12" value="no">
+                    <label for="q12_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Мягкосердечный ли вы человек?</span><br>
+                    <input type="radio" id="q13_yes" name="q13" value="yes">
+                    <label for="q13_yes">Да</label>
+                    <input type="radio" id="q13_no" name="q13" value="no">
+                    <label for="q13_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Пытаетесь ли вы проверить после того, как опустили письмо в почтовый ящик, не осталось ли оно висеть в прорези?</span><br>
+                    <input type="radio" id="q14_yes" name="q14" value="yes">
+                    <label for="q14_yes">Да</label>
+                    <input type="radio" id="q14_no" name="q14" value="no">
+                    <label for="q14_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Всегда ли вы стараетесь быть добросовестным в работе?</span><br>
+                    <input type="radio" id="q15_yes" name="q15" value="yes">
+                    <label for="q15_yes">Да</label>
+                    <input type="radio" id="q15_no" name="q15" value="no">
+                    <label for="q15_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Испытывали ли вы в детстве страх перед грозой или собаками?</span><br>
+                    <input type="radio" id="q16_yes" name="q16" value="yes">
+                    <label for="q16_yes">Да</label>
+                    <input type="radio" id="q16_no" name="q16" value="no">
+                    <label for="q16_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Считаете ли вы других людей недостаточно требовательными друг к другу?</span><br>
+                    <input type="radio" id="q17_yes" name="q17" value="yes">
+                    <label for="q17_yes">Да</label>
+                    <input type="radio" id="q17_no" name="q17" value="no">
+                    <label for="q17_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Сильно ли зависит ваше настроение от жизненных событий и переживаний?</span><br>
+                    <input type="radio" id="q18_yes" name="q18" value="yes">
+                    <label for="q18_yes">Да</label>
+                    <input type="radio" id="q18_no" name="q18" value="no">
+                    <label for="q18_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Всегда ли вы прямодушны со своими знакомыми?</span><br>
+                    <input type="radio" id="q19_yes" name="q19" value="yes">
+                    <label for="q19_yes">Да</label>
+                    <input type="radio" id="q19_no" name="q19" value="no">
+                    <label for="q19_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Часто ли ваше настроение бывает подавленным?</span><br>
+                    <input type="radio" id="q20_yes" name="q20" value="yes">
+                    <label for="q20_yes">Да</label>
+                    <input type="radio" id="q20_no" name="q20" value="no">
+                    <label for="q20_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Был ли у вас раньше истерический припадок или истощение нервной системы?</span><br>
+                    <input type="radio" id="q21_yes" name="q21" value="yes">
+                    <label for="q21_yes">Да</label>
+                    <input type="radio" id="q21_no" name="q21" value="no">
+                    <label for="q21_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Склонны ли вы к состояниям сильного внутреннегобеспокойства или страстного стремления?</span><br>
+                    <input type="radio" id="q22_yes" name="q22" value="yes">
+                    <label for="q22_yes">Да</label>
+                    <input type="radio" id="q22_no" name="q22" value="no">
+                    <label for="q22_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Трудно ли вам длительное время просидеть на стуле?</span><br>
+                    <input type="radio" id="q23_yes" name="q23" value="yes">
+                    <label for="q23_yes">Да</label>
+                    <input type="radio" id="q23_no" name="q23" value="no">
+                    <label for="q23_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Боретесь ли вы за свои интересы, если кто-то поступает с вами несправедливо?</span><br>
+                    <input type="radio" id="q24_yes" name="q24" value="yes">
+                    <label for="q24_yes">Да</label>
+                    <input type="radio" id="q24_no" name="q24" value="no">
+                    <label for="q24_no">Нет</label>
+                </li>
+                <!-- Продолжайте добавлять оставшиеся вопросы аналогично -->
+                <li class="question">
+                    <span>Смогли бы вы убить человека?</span><br>
+                    <input type="radio" id="q25_yes" name="q25" value="yes">
+                    <label for="q25_yes">Да</label>
+                    <input type="radio" id="q25_no" name="q25" value="no">
+                    <label for="q25_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Сильно ли вам мешает косо висящая гардина или неровно настланная скатерть, настолько, что вам хочется немедленно устранить эти недостатки?</span><br>
+                    <input type="radio" id="q26_yes" name="q26" value="yes">
+                    <label for="q26_yes">Да</label>
+                    <input type="radio" id="q26_no" name="q26" value="no">
+                    <label for="q26_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Испытывали ли вы в детстве страх, когда оставались одни в квартире?</span><br>
+                    <input type="radio" id="q27_yes" name="q27" value="yes">
+                    <label for="q27_yes">Да</label>
+                    <input type="radio" id="q27_no" name="q27" value="no">
+                    <label for="q27_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Часто ли у вас без причины меняется настроение?</span><br>
+                    <input type="radio" id="q28_yes" name="q28" value="yes">
+                    <label for="q28_yes">Да</label>
+                    <input type="radio" id="q28_no" name="q28" value="no">
+                    <label for="q28_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Всегда ли вы старательно относитесь к своей деятельности?</span><br>
+                    <input type="radio" id="q29_yes" name="q29" value="yes">
+                    <label for="q29_yes">Да</label>
+                    <input type="radio" id="q29_no" name="q29" value="no">
+                    <label for="q29_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Быстро ли вы можете разгневаться?</span><br>
+                    <input type="radio" id="q30_yes" name="q30" value="yes">
+                    <label for="q30_yes">Да</label>
+                    <input type="radio" id="q30_no" name="q30" value="no">
+                    <label for="q30_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Можете ли вы быть бесшабашно веселым?</span><br>
+                    <input type="radio" id="q31_yes" name="q31" value="yes">
+                    <label for="q31_yes">Да</label>
+                    <input type="radio" id="q31_no" name="q31" value="no">
+                    <label for="q31_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Можете ли вы иногда целиком проникнуться чувством радости?</span><br>
+                    <input type="radio" id="q32_yes" name="q32" value="yes">
+                    <label for="q32_yes">Да</label>
+                    <input type="radio" id="q32_no" name="q32" value="no">
+                    <label for="q32_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Подходите ли вы для проведения увеселительных мероприятий?</span><br>
+                    <input type="radio" id="q33_yes" name="q33" value="yes">
+                    <label for="q33_yes">Да</label>
+                    <input type="radio" id="q33_no" name="q33" value="no">
+                    <label for="q33_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Высказываете ли вы обычно людям свое откровенное мнение по тому или иному вопросу?</span><br>
+                    <input type="radio" id="q34_yes" name="q34" value="yes">
+                    <label for="q34_yes">Да</label>
+                    <input type="radio" id="q34_no" name="q34" value="no">
+                    <label for="q34_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Влияет ли на вас вид крови?</span><br>
+                    <input type="radio" id="q35_yes" name="q35" value="yes">
+                    <label for="q35_yes">Да</label>
+                    <input type="radio" id="q35_no" name="q35" value="no">
+                    <label for="q35_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Охотно ли вы занимаетесь деятельностью, связанной с большой ответственностью?</span><br>
+                    <input type="radio" id="q36_yes" name="q36" value="yes">
+                    <label for="q36_yes">Да</label>
+                    <input type="radio" id="q36_no" name="q36" value="no">
+                    <label for="q36_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Склонны ли вы вступиться за человека, с которым поступили несправедливо?</span><br>
+                    <input type="radio" id="q37_yes" name="q37" value="yes">
+                    <label for="q37_yes">Да</label>
+                    <input type="radio" id="q37_no" name="q37" value="no">
+                    <label for="q37_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Трудно ли вам входить в темный подвал?</span><br>
+                    <input type="radio" id="q38_yes" name="q38" value="yes">
+                    <label for="q38_yes">Да</label>
+                    <input type="radio" id="q38_no" name="q38" value="no">
+                    <label for="q38_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Выполняете ли вы кропотливую черную работу так же медленно и тщательно, как и любимое вами дело?</span><br>
+                    <input type="radio" id="q39_yes" name="q39" value="yes">
+                    <label for="q39_yes">Да</label>
+                    <input type="radio" id="q39_no" name="q39" value="no">
+                    <label for="q39_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Являетесь ли вы общительным человеком?</span><br>
+                    <input type="radio" id="q40_yes" name="q40" value="yes">
+                    <label for="q40_yes">Да</label>
+                    <input type="radio" id="q40_no" name="q40" value="no">
+                    <label for="q40_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Можете ли вы считаться общительным человеком?</span><br>
+                    <input type="radio" id="q41_yes" name="q41" value="yes">
+                    <label for="q41_yes">Да</label>
+                    <input type="radio" id="q41_no" name="q41" value="no">
+                    <label for="q41_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Часто ли у вас настроение поднимается и падает?</span><br>
+                    <input type="radio" id="q42_yes" name="q42" value="yes">
+                    <label for="q42_yes">Да</label>
+                    <input type="radio" id="q42_no" name="q42" value="no">
+                    <label for="q42_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Бывает ли у вас подавленное настроение?</span><br>
+                    <input type="radio" id="q43_yes" name="q43" value="yes">
+                    <label for="q43_yes">Да</label>
+                    <input type="radio" id="q43_no" name="q43" value="no">
+                    <label for="q43_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Часто ли вы ощущаете беспокойство?</span><br>
+                    <input type="radio" id="q44_yes" name="q44" value="yes">
+                    <label for="q44_yes">Да</label>
+                    <input type="radio" id="q44_no" name="q44" value="no">
+                    <label for="q44_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Постоянно ли у вас меняется настроение?</span><br>
+                    <input type="radio" id="q45_yes" name="q45" value="yes">
+                    <label for="q45_yes">Да</label>
+                    <input type="radio" id="q45_no" name="q45" value="no">
+                    <label for="q45_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Бывает ли у вас навязчивая идея?</span><br>
+                    <input type="radio" id="q46_yes" name="q46" value="yes">
+                    <label for="q46_yes">Да</label>
+                    <input type="radio" id="q46_no" name="q46" value="no">
+                    <label for="q46_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Часто ли вы испытываете сомнения?</span><br>
+                    <input type="radio" id="q47_yes" name="q47" value="yes">
+                    <label for="q47_yes">Да</label>
+                    <input type="radio" id="q47_no" name="q47" value="no">
+                    <label for="q47_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Испытывали ли вы чувство вины?</span><br>
+                    <input type="radio" id="q48_yes" name="q48" value="yes">
+                    <label for="q48_yes">Да</label>
+                    <input type="radio" id="q48_no" name="q48" value="no">
+                    <label for="q48_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Считаете ли вы себя уверенным человеком?</span><br>
+                    <input type="radio" id="q49_yes" name="q49" value="yes">
+                    <label for="q49_yes">Да</label>
+                    <input type="radio" id="q49_no" name="q49" value="no">
+                    <label for="q49_no">Нет</label>
+                </li>
+                <li class="question">
+                    <span>Случалось ли вам испытывать чувство страха?</span><br>
+                    <input type="radio" id="q50_yes" name="q50" value="yes">
+                    <label for="q50_yes">Да</label>
+                    <input type="radio" id="q50_no" name="q50" value="no">
+                    <label for="q50_no">Нет</label>
+                </li>
+        
+        
+        
+            </ol>
+            <button id="result" class="submit-btn">Получить результат</button>
+            <div id="result-container" class="result"></div>
+        </div>
+    
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    // Обработчик кнопки "Получить результат"
+    document.getElementById('result').addEventListener('click', function() {
+        // Инициализация переменных для подсчета баллов по каждой шкале
+        let scores = {
+            "Демонстративность": 0,
+            "Застревание": 0,
+            "Педантичность": 0,
+            "Неуравновешенность": 0,
+            "Гипертимность": 0,
+            "Дистимичность": 0,
+            "Тревожность": 0,
+            "Циклотимичность": 0,
+            "Аффективность": 0,
+            "Эмотивность": 0
+        };
+
+        // Обработка ответов на вопросы
+        let answers = document.querySelectorAll('.question input[type="radio"]');
+        answers.forEach(function(answer) {
+            if (answer.checked) {
+                let questionNumber = parseInt(answer.id.split('_')[0].substring(1));
+                // Подсчет баллов по каждой шкале
+                switch (questionNumber) {
+                    case 7:
+                    case 19:
+                    case 22:
+                    case 29:
+                    case 41:
+                    case 44:
+                    case 63:
+                    case 66:
+                    case 73:
+                    case 85:
+                    case 88:
+                        scores["Демонстративность"] += 2;
+                        break;
+                    case 2:
+                    case 15:
+                    case 24:
+                    case 34:
+                    case 37:
+                    case 56:
+                    case 68:
+                    case 78:
+                    case 81:
+                        scores["Застревание"] += 2;
+                        break;
+                    case 4:
+                    case 14:
+                    case 17:
+                    case 26:
+                    case 39:
+                    case 48:
+                    case 58:
+                    case 61:
+                    case 70:
+                    case 80:
+                    case 83:
+                        scores["Педантичность"] += 2;
+                        break;
+                    case 8:
+                    case 20:
+                    case 30:
+                    case 42:
+                    case 52:
+                    case 64:
+                    case 74:
+                    case 86:
+                        scores["Неуравновешенность"] += 3;
+                        break;
+                    case 1:
+                    case 11:
+                    case 23:
+                    case 33:
+                    case 45:
+                    case 55:
+                    case 67:
+                    case 77:
+                        scores["Гипертимность"] += 3;
+                        break;
+                    case 9:
+                    case 21:
+                    case 43:
+                    case 75:
+                    case 87:
+                        scores["Дистимичность"] += 3;
+                        break;
+                    case 16:
+                    case 27:
+                    case 38:
+                    case 49:
+                    case 60:
+                    case 71:
+                    case 82:
+                        scores["Тревожность"] += 3;
+                        break;
+                    case 6:
+                    case 18:
+                    case 18:
+                    case 40:
+                    case 50:
+                    case 62:
+                    case 72:
+                    case 84:
+                        scores["Циклотимичность"] += 3;
+                        break;
+                    case 10:
+                    case 32:
+                    case 54:
+                    case 76:
+                        scores["Аффективность"] += 6;
+                        break;
+                    case 3:
+                    case 13:
+                    case 35:
+                    case 47:
+                    case 57:
+                    case 69:
+                    case 79:
+                        scores["Эмотивность"] += 3;
+                        break;
+                }
+            }
+        });
+        // Вывод результатов
+        let resultContainer = document.getElementById('result-container');
+        let resultText = "<h2>Результаты теста:</h2>";
+        for (let scale in scores) {
+            let score = scores[scale];
+            let interpretation = getInterpretation(score);
+            resultText += `<p><strong>${scale}:</strong> ${score} (${interpretation})</p>`;
+        }
+        resultContainer.innerHTML = resultText;
+    });
+});
+
+// Функция для интерпретации результатов по шкалам
+function getInterpretation(score) {
+    if (score >= 19) {
+        return "Признак акцентуации";
+    } else if (score >= 13) {
+        return "Средняя степень выраженности свойства (тенденция)";
+    } else {
+        return "Свойство не выражено";
+    }
+}
+
+        </script>
+    
+    <div class="result">
+        <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+        <h2>Пояснение к результатам</h2>
+        <p>Демонстративность - Повышенная способность к вытеснению, демонстративное поведение, живость и легкость в установлении контактов. Склонен к фантазерству, лживости и притворству.</p>
+        <p>Застревание -Умеренная общительность, занудливость и склонность к нравоучениям. Часто страдает от мнимой несправедливости и может быть инициатором конфликтов.</p>
+        <p>Педантичность - склонность к ригидности, аккуратности и брюзжанию, придерживание формальных правил и требование порядка, избегание конфликтов.</p>
+        <p>Неуравновешенность - Недостаточная управляемость, ослабление контроля над влечениями и побуждениями.</p>
+        <p>Эмотивность - Эмоциональность, чувствительность и глубокие реакции в области тонких чувств.,</p>
+        <p>Аффективность - Сильные и частые эмоциональные всплески, которые могут быть непредсказуемыми и несоразмерными с вызывающими их событиями.</p>
+        <p>Циклотимичность - Смена гипертимных и дистимных состояний с повышенной зависимостью от внешних событий.</p>
+        <p>Тревожность - Низкая контактность, минорное настроение, робость, пугливость и неуверенность в себе.</p>
+        </div>
+        
+    </div>
+
+        
+        
+</body>
+</html>

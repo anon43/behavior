@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест на тип темперамента</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgba(46, 67, 87, 1);
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    ol {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .question {
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      margin-bottom: 20px;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    label {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2E4357;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    label:hover {
+      background-color: #49637D;
+    }
+
+    input[type='radio']:checked+label {
+      background-color: #37a4a4;
+    }
+
+    .submit-btn {
+      background-color: #2db2a0;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="Group 6.png" alt="Test Image" style="width:auto; margin: 20px;">
+    </div>
+  <div class="container">
+    <h1>Тест на тип темперамента</h1>
+    <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+        <p style="margin: 0; color: white;">Темперамент — это индивидуальные особенности человека, которые определяют динамику его психической деятельности и поведения.</p>
+    </div>
+    <form id="quizForm">
+      <ol>
+        <li class="question">Какой у вас характер?</li>
+        <li class="answer">
+          <input type="radio" id="q1a" name="question1" value="A">
+          <label for="q1a">Спокойный, медлительный, обстоятельный, сдержанный, миролюбивый.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q1b" name="question1" value="B">
+          <label for="q1b">Робкий, застенчивый, обидчивый, впечатлительный, нерешительный.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q1c" name="question1" value="C">
+          <label for="q1c">Энергичный, неугомонный, шаловливый, горячий, задиристый.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q1d" name="question1" value="D">
+          <label for="q1d">Жизнелюбивый, оптимистичный, компромиссный, общительный, склонный к риску.</label>
+        </li>
+
+        <li class="question">Какие эмоции вы наиболее часто испытываете?</li>
+        <li class="answer">
+          <input type="radio" id="q2a" name="question2" value="A">
+          <label for="q2a">Спокойствие, бурных реакций нет.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q2b" name="question2" value="B">
+          <label for="q2b">Страх</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q2c" name="question2" value="C">
+          <label for="q2c">Гнев, бурные эмоции</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q2d" name="question2" value="D">
+          <label for="q2d">Положительные эмоции, много смеюсь.</label>
+        </li>
+
+        <li class="question">Какие развлечения вам нравятся?</li>
+        <li class="answer">
+          <input type="radio" id="q3a" name="question3" value="A">
+          <label for="q3a">Уединенные, тихие, спокойные.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q3b" name="question3" value="B">
+          <label for="q3b">Уединенные, тихие; подвижные и шумные – только с близкими.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q3c" name="question3" value="C">
+          <label for="q3c">Азартные, шумные, подвижные, даже агрессивные.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q3d" name="question3" value="D">
+          <label for="q3d">Всякие, но чтобы было весело.</label>
+        </li>
+
+        <li class="question">Как реагируете на критику?</li>
+        <li class="answer">
+          <input type="radio" id="q4a" name="question4" value="A">
+          <label for="q4a">Практически без эмоций</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q4b" name="question4" value="B">
+          <label for="q4b">Негативно, с обидой</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q4c" name="question4" value="C">
+          <label for="q4c">С бурным протестом.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q4d" name="question4" value="D">
+          <label for="q4d">Спокойно.</label>
+        </li>
+
+        <li class="question">Как ведете себя в неожиданных ситуациях?</li>
+        <li class="answer">
+          <input type="radio" id="q5a" name="question5" value="A">
+          <label for="q5a">Малоэмоционально</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q5b" name="question5" value="B">
+          <label for="q5b">Пытаюсь избежать этой ситуации (инстинкт самосохранения)</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q5c" name="question5" value="C">
+          <label for="q5c">Пытаюсь сопротивляться (потребность борьбы)</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q5d" name="question5" value="D">
+          <label for="q5d">Проявляю любопытство (выраженное позитивное отношение)</label>
+        </li>
+
+        <li class="question">Насколько вы общительны?</li>
+        <li class="answer">
+          <input type="radio" id="q6a" name="question6" value="A">
+          <label for="q6a">Предпочитаю уединение</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q6b" name="question6" value="B">
+          <label for="q6b">Предпочитаю уединение, общителен только с близкими.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q6c" name="question6" value="C">
+          <label for="q6c">Нуждаюсь в зрителях и сподвижниках</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q6d" name="question6" value="D">
+          <label for="q6d">Люблю общество и взрослых, и детей, знакомлюсь быстро.</label>
+        </li>
+
+        <li class="question">Особенности памяти</li>
+        <li class="answer">
+          <input type="radio" id="q7a" name="question7" value="A">
+          <label for="q7a">Запоминаю медленно, но запоминаю и почти не забываю целое </label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q7b" name="question7" value="B">
+          <label for="q7b">Запоминаю по-разному, больше вникаю в мелочи</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q7c" name="question7" value="C">
+          <label for="q7c">Быстро запоминаю детали, но быстро забываю </label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q7d" name="question7" value="D">
+          <label for="q7d">Быстро и легко схватываю целое и долго помню </label>
+        </li>
+
+        <li class="question">Как усваивается новое?</li>
+        <li class="answer">
+          <input type="radio" id="q8a" name="question8" value="A">
+          <label for="q8a">Медленно, зато обстоятельно</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q8b" name="question8" value="B">
+          <label for="q8b">Зависит от обстоятельств</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q8c" name="question8" value="C">
+          <label for="q8c">Схватываю на лету, но быстро забываю</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q8d" name="question8" value="D">
+          <label for="q8d">Быстро и легко</label>
+        </li>
+
+        <li class="question">Утомляемость:</li>
+        <li class="answer">
+          <input type="radio" id="q9a" name="question9" value="A">
+          <label for="q9a">Очень низкая, почти не устаю</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q9b" name="question9" value="B">
+          <label for="q9b">Высокая, любая деятельность вызывает упадок сил</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q9c" name="question9" value="C">
+          <label for="q9c">Иногда средняя, а иногда высокая, зависит от моих эмоций</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q9d" name="question9" value="D">
+          <label for="q9d">Средняя, устаю соразмерно деятельности</label>
+        </li>
+
+        <li class="question">Особенности речи:</li>
+        <li class="answer">
+          <input type="radio" id="q10a" name="question10" value="A">
+          <label for="q10a">Медленная, без жестов, невыразительная</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q10b" name="question10" value="B">
+          <label for="q10b">Тихая, но выразительная</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q10c" name="question10" value="C">
+          <label for="q10c">Речь эмоциональная, отрывистая, быстрая;</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q10d" name="question10" value="D">
+          <label for="q10d">С жестами и мимикой, выразительная, живая</label>
+        </li>
+
+        <li class="question">Движения:</li>
+        <li class="answer">
+          <input type="radio" id="q11a" name="question11" value="A">
+          <label for="q11a">Солидные, неторопливые, нерасторопные</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q11b" name="question11" value="B">
+          <label for="q11b">Суетливые, неточные, неуверенные</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q11c" name="question11" value="C">
+          <label for="q11c">Резкие, порывистые</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q11d" name="question11" value="D">
+          <label for="q11d">Ритмичные, точные, уверенные</label>
+        </li>
+
+        <li class="question">Привыкание к новой обстановке:</li>
+        <li class="answer">
+          <input type="radio" id="q12a" name="question12" value="A">
+          <label for="q12a">Боязнь нового, нежелание перемен, долгая адаптация</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q12b" name="question12" value="B">
+          <label for="q12b">Долгое привыкание, трудная адаптация</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q12c" name="question12" value="C">
+          <label for="q12c">Легкое привыкание к новой обстановке</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q12d" name="question12" value="D">
+          <label for="q12d">Адаптация легкая и быстрая</label>
+        </li>
+
+        <li class="question">Особенности сна:</li>
+        <li class="answer">
+          <input type="radio" id="q13a" name="question13" value="A">
+          <label for="q13a">Засыпаюбыстро, сплю спокойно.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q13b" name="question13" value="B">
+          <label for="q13b">Укладываюсь спать долго, но засыпаю быстро.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q13c" name="question13" value="C">
+          <label for="q13c">Засыпаю долго и трудно.</label>
+        </li>
+        <li class="answer">
+          <input type="radio" id="q13d" name="question13" value="D">
+          <label for="q13d">Засыпаю быстро, сон крепкий.</label>
+        </li>
+      </ol>
+      <button type="submit" class="submit-btn">Получить результат</button>
+    </form>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const formData = new FormData(this);
+      const answers = {};
+      let result = '';
+  
+      formData.forEach((value, key) => {
+        if (answers[value]) {
+          answers[value]++;
+        } else {
+          answers[value] = 1;
+        }
+      });
+  
+      const max = Math.max(...Object.values(answers));
+      const temperament = Object.keys(answers).find(key => answers[key] === max);
+  
+      switch (temperament) {
+        case 'A':
+          result = 'Флегматик';
+          break;
+        case 'B':
+          result = 'Меланхолик';
+          break;
+        case 'C':
+          result = 'Холерик';
+          break;
+        case 'D':
+          result = 'Сангвиник';
+          break;
+        default:
+          result = 'Результат не определен';
+      }
+  
+      document.getElementById('result').innerText = 'Ваш тип темперамента: ' + result;
+    });
+  </script>
+  
+</body>
+</html>
+
+
+
+

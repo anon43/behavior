@@ -4,22 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Большая пятерка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: rgba(46, 67, 87, 1);
             font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 0;
-            position: relative;
-            color: white;
+            color: #fff;
         }
 
         .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
         }
 
         .question {
@@ -44,41 +55,53 @@
         }
 
         label:hover {
-            background-color: #37a4a4;
+            background-color: #49637D;
         }
 
         input[type='radio']:checked+label {
-            background-color: #2db2a0;
+            background-color: #37a4a4;
         }
 
         .submit-btn {
-            background-color: #3d4eb2;
+            background-color: #2db2a0;
             border: none;
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            margin-left: 100px;
+            display: block;
+            margin: 20px auto;
         }
 
         .submit-btn:hover {
-            background-color: #2a7ed1;
+            background-color: #45a049;
         }
 
         .result {
             margin-top: 20px;
             font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <img src="Group 5 (1).png" alt="Test Image" style="width: 90%; margin: 20px; ;">
-    <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
-        <p style="margin: 0; color: white;">Тест "большая пятерка" обычно используется для оценки различных качеств или характеристик. В контексте тестирования, "большая пятерка" может относиться к выбору пяти наиболее важных или значимых аспектов или вопросов для оценки.</p>
+    <div style="text-align: center;">
+        <img src="Group 5 (1).png" alt="Test Image" style="width:auto; margin: 20px;">
     </div>
     
+    
     <div class="container">
+        <h1>Большая пятерка</h1>
+        <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+        <p style="margin: 0; color: white;">Тест "большая пятерка" обычно используется для оценки различных качеств или характеристик. В контексте тестирования, "большая пятерка" может относиться к выбору пяти наиболее важных или значимых аспектов или вопросов для оценки.</p>
+    </div>
+    <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+        <h2>Пояснение к выбору ответов</h2>
+        <p>0 – нет, это не обо мне;</p>
+        <p>1 – иногда это обо мне, иногда – нет;</p>
+        <p>2 – да, это точно обо мне.</p>
+        </div>
         <div class="question">
             <p>1. Для меня лучший отдых пообщаться в веселой компании.</p>
             <div class="answer">
