@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шкала тревоги</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(46, 67, 87, 1);
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            margin-bottom: 20px;
+        }
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 10px 20px;
+            background-color: #2E4357;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        label:hover {
+            background-color: #49637D;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: #37a4a4;
+        }
+
+        .submit-btn {
+            background-color: #2db2a0;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="Group 9.png" alt="Test Image" style="width:auto; margin: 20px;">
+    </div>
+    <div class="container">
+        <h1>Шкала тревоги</h1>
+        <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+            <p style="margin: 0; color: white;">Шкала тревоги- это клиническая
+                тестовая методика, предназначенная 
+                для скрининга тревоги и 
+                оценки ее степени, разработана
+                Аароном Беком</p>
+        </div>
+        <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+            <h2>Инструкция:</h2>
+            <p>Внимательно прочитайте каждую группу утверждений.</p>
+            <p>Отвечая на вопросы, имейте в виду, что они относятся к состоянию не только на
+                момент заполнения опросника, но и на протяжении последних 7 дней.</p>
+            </div>
+            <div class="question">
+                <div class="question">
+                    <span>1. Ощущение онемения или покалывания в теле</span><br>
+                    <input type="radio" id="q1_0" name="q1" value="0">
+                    <label for="q1_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q1_1" name="q1" value="1">
+                    <label for="q1_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q1_2" name="q1" value="2">
+                    <label for="q1_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q1_3" name="q1" value="3">
+                    <label for="q1_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>2. Ощущение жары</span><br>
+                    <input type="radio" id="q2_0" name="q2" value="0">
+                    <label for="q2_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q2_1" name="q2" value="1">
+                    <label for="q2_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q2_2" name="q2" value="2">
+                    <label for="q2_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q2_3" name="q2" value="3">
+                    <label for="q2_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>3. Дрожь в ногах</span><br>
+                    <input type="radio" id="q3_0" name="q3" value="0">
+                    <label for="q3_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q3_1" name="q3" value="1">
+                    <label for="q3_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q3_2" name="q3" value="2">
+                    <label for="q3_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q3_3" name="q3" value="3">
+                    <label for="q3_3">3 Очень сильно беспокоит</label><br>
+                </div>
+            
+                <div class="question">
+                    <span>4. Неспособность расслабиться</span><br>
+                    <input type="radio" id="q4_0" name="q4" value="0">
+                    <label for="q4_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q4_1" name="q4" value="1">
+                    <label for="q4_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q4_2" name="q4" value="2">
+                    <label for="q4_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q4_3" name="q4" value="3">
+                    <label for="q4_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>5. Страх, что произойдет самое плохое</span><br>
+                    <input type="radio" id="q5_0" name="q5" value="0">
+                    <label for="q5_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q5_1" name="q5" value="1">
+                    <label for="q5_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q5_2" name="q5" value="2">
+                    <label for="q5_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q5_3" name="q5" value="3">
+                    <label for="q5_3">3 Очень сильно беспокоит</label><br>
+                </div>
+            
+                <div class="question">
+                    <span>6. Головокружение или ощущение легкости в голове</span><br>
+                    <input type="radio" id="q6_0" name="q6" value="0">
+                    <label for="q6_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q6_1" name="q6" value="1">
+                    <label for="q6_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q6_2" name="q6" value="2">
+                    <label for="q6_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q6_3" name="q6" value="3">
+                    <label for="q6_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>7. Учащенное сердцебиение</span><br>
+                    <input type="radio" id="q7_0" name="q7" value="0">
+                    <label for="q7_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q7_1" name="q7" value="1">
+                    <label for="q7_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q7_2" name="q7" value="2">
+                    <label for="q7_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q7_3" name="q7" value="3">
+                    <label for="q7_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>8. Неустойчивость</span><br>
+                    <input type="radio" id="q8_0" name="q8" value="0">
+                    <label for="q8_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q8_1" name="q8" value="1">
+                    <label for="q8_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q8_2" name="q8" value="2">
+                    <label for="q8_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q8_3" name="q8" value="3">
+                    <label for="q8_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>9. Ощущение ужаса</span><br>
+                    <input type="radio" id="q9_0" name="q9" value="0">
+                    <label for="q9_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q9_1" name="q9" value="1">
+                    <label for="q9_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q9_2" name="q9" value="2">
+                    <label for="q9_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q9_3" name="q9" value="3">
+                    <label for="q9_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>10. Нервозность</span><br>
+                    <input type="radio" id="q10_0" name="q10" value="0">
+                    <label for="q10_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q10_1" name="q10" value="1">
+                    <label for="q10_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q10_2" name="q10" value="2">
+                    <label for="q10_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q10_3" name="q10" value="3">
+                    <label for="q10_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>11. Дрожь в руках</span><br>
+                    <input type="radio" id="q11_0" name="q11" value="0">
+                    <label for="q11_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q11_1" name="q11" value="1">
+                    <label for="q11_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q11_2" name="q11" value="2">
+                    <label for="q11_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q11_3" name="q11" value="3">
+                    <label for="q11_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>12. Ощущение удушья</span><br>
+                    <input type="radio" id="q12_0" name="q12" value="0">
+                    <label for="q12_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q12_1" name="q12" value="1">
+                    <label for="q12_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q12_2" name="q12" value="2">
+                    <label for="q12_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q12_3" name="q12" value="3">
+                    <label for="q12_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>13. Шаткость походки</span><br>
+                    <input type="radio" id="q13_0" name="q13" value="0">
+                    <label for="q13_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q13_1" name="q13" value="1">
+                    <label for="q13_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q13_2" name="q13" value="2">
+                    <label for="q13_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q13_3" name="q13" value="3">
+                    <label for="q13_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>14. Страх утраты контроля</span><br>
+                    <input type="radio" id="q14_0" name="q14" value="0">
+                    <label for="q14_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q14_1" name="q14" value="1">
+                    <label for="q14_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q14_2" name="q14" value="2">
+                    <label for="q14_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q14_3" name="q14" value="3">
+                    <label for="q14_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>15. Затрудненность дыхания</span><br>
+                    <input type="radio" id="q15_0" name="q15" value="0">
+                    <label for="q15_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q15_1" name="q15" value="1">
+                    <label for="q15_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q15_2" name="q15" value="2">
+                    <label for="q15_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q15_3" name="q15" value="3">
+                    <label for="q15_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>16. Страх смерти</span><br>
+                    <input type="radio" id="q16_0" name="q16" value="0">
+                    <label for="q16_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q16_1" name="q16" value="1">
+                    <label for="q16_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q16_2" name="q16" value="2">
+                    <label for="q16_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q16_3" name="q16" value="3">
+                    <label for="q16_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>17. Испуг</span><br>
+                    <input type="radio" id="q17_0" name="q17" value="0">
+                    <label for="q17_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q17_1" name="q17" value="1">
+                    <label for="q17_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q17_2" name="q17" value="2">
+                    <label for="q17_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q17_3" name="q17" value="3">
+                    <label for="q17_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>18. Желудочно-кишечные расстройства</span><br>
+                    <input type="radio" id="q18_0" name="q18" value="0">
+                    <label for="q18_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q18_1" name="q18" value="1">
+                    <label for="q18_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q18_2" name="q18" value="2">
+                    <label for="q18_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q18_3" name="q18" value="3">
+                    <label for="q18_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <span>19. Обмороки</span><br>
+                    <input type="radio" id="q19_0" name="q19" value="0">
+                    <label for="q19_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q19_1" name="q19" value="1">
+                    <label for="q19_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q19_2" name="q19" value="2">
+                    <label for="q19_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q19_3" name="q19" value="3">
+                    <label for="q19_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                
+                <div class="question">
+                    <span>20. Приливы крови к лицу</span><br>
+                    <input type="radio" id="q20_0" name="q20" value="0">
+                    <label for="q20_0">0 Совсем не беспокоит</label><br>
+                    <input type="radio" id="q20_1" name="q20" value="1">
+                    <label for="q20_1">1 Немного беспокоит</label><br>
+                    <input type="radio" id="q20_2" name="q20" value="2">
+                    <label for="q20_2">2 Умеренно беспокоит</label><br>
+                    <input type="radio" id="q20_3" name="q20" value="3">
+                    <label for="q20_3">3 Очень сильно беспокоит</label><br>
+                </div>
+                <div class="question">
+                    <p>21. Усиление потоотделения (не связанное с жарой)</p>
+                    <input type="radio" id="q21_0" name="q21" value="0">
+                    <label for="q21_0">Совсем не беспокоил</label><br>
+                    <input type="radio" id="q21_1" name="q21" value="1">
+                    <label for="q21_1">Слегка. Не слишком меня беспокоил</label><br>
+                    <input type="radio" id="q21_2" name="q21" value="2">
+                    <label for="q21_2">Умеренно. Это было неприятно, но я мог/могла это переносить</label><br>
+                    <input type="radio" id="q21_3" name="q21" value="3">
+                    <label for="q21_3">Очень сильно. Я с трудом мог/могла это выносить</label><br>
+                </div>                
+        <button class="submit-btn" onclick="calculateTotalScore()">Получить результат</button>
+
+        <div class="result"></div> <!-- Этот элемент нужен для вывода результатов -->
+    </div>
+
+    <script>
+        // Функция для подсчета общего балла
+    function calculateTotalScore() {
+        let totalScore = 0;
+        
+        // Суммируем значения выбранных ответов
+        const answers = document.querySelectorAll('input[type="radio"]:checked');
+        answers.forEach(answer => {
+            totalScore += parseInt(answer.value);
+        });
+        
+        return totalScore;
+    }
+
+    // Функция для определения уровня тревоги
+    function determineAnxietyLevel(totalScore) {
+        if (totalScore >= 0 && totalScore <= 21) {
+            return "незначительный уровень тревоги (стоит проанализировать свои потенциально «слабые» места)";
+        } else if (totalScore >= 22 && totalScore <= 35) {
+            return "средний уровень тревоги(Рекомендовано обращение к психотерапевту.)";
+        } else if (totalScore > 35) {
+            return "очень высокий уровень тревоги( Обязательно обращение к психотерапевту или психиатру.)";
+        }
+    }
+
+    // Функция для вывода результатов
+    function displayResults() {
+        const totalScore = calculateTotalScore();
+        const anxietyLevel = determineAnxietyLevel(totalScore);
+
+        // Выводим результаты на страницу
+        document.querySelector('.result').innerHTML = `
+            <p>Общий балл: ${totalScore}</p>
+            <p>Уровень тревоги: ${anxietyLevel}</p>
+        `;
+    }
+
+    // Назначаем обработчик события на кнопку "Получить результат"
+    document.querySelector('.submit-btn').addEventListener('click', displayResults);
+</script>
+</script>
+</script>
+    </script>
+</body>
+</html>

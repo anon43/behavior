@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шкала депрессии</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(46, 67, 87, 1);
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            margin-bottom: 20px;
+        }
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 10px 20px;
+            background-color: #2E4357;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        label:hover {
+            background-color: #49637D;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: #37a4a4;
+        }
+
+        .submit-btn {
+            background-color: #2db2a0;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="Group 8.png" alt="Test Image" style="width:auto; margin: 20px;">
+    </div>
+    <div class="container">
+        <h1>Шкала депрессии</h1>
+        <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+            <p style="margin: 0; color: white;">Шкала депрессии- это методика диагностики депрессивных состояний, разработанная американским психотерапевтом Аароном Беком.</p>
+        </div>
+        <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+            <h2>Инструкция:</h2>
+            <p>Внимательно прочитайте каждую группу утверждений.</p>
+            <p>Затем определите в каждой группе одно утверждение, которое лучше всего
+                соответствует тому, как Вы себя чувствовали НА ЭТОЙ НЕДЕЛЕ И СЕГОДНЯ.</p>
+            </div>
+        <div class="question">
+            <span>1) Выберите утверждение: </span><br>
+            <input type="radio" id="q1_0" name="q1" value="0">
+            <label for="q1_0">0 Я не чувствую себя расстроенным, печальным</label><br>
+            <input type="radio" id="q1_1" name="q1" value="1">
+            <label for="q1_1">1 Я расстроен.</label><br>
+            <input type="radio" id="q1_2" name="q1" value="2">
+            <label for="q1_2">2 Я все время расстроен и не могу от этого отключиться.</label><br>
+            <input type="radio" id="q1_3" name="q1" value="3">
+            <label for="q1_3">3 Я настолько расстроен и несчастлив, что не могу это выдержать.</label>
+        </div>
+        
+        <!-- Вопрос 2 -->
+        <div class="question">
+            <span>2) Выберите утверждение: </span><br>
+            <input type="radio" id="q2_0" name="q2" value="0">
+            <label for="q2_0">0 Я не тревожусь о своем будущем.</label><br>
+            <input type="radio" id="q2_1" name="q2" value="1">
+            <label for="q2_1">1 Я чувствую, что озадачен будущим.</label><br>
+            <input type="radio" id="q2_2" name="q2" value="2">
+            <label for="q2_2">2 Я чувствую, что меня ничего не ждет в будущем.</label><br>
+            <input type="radio" id="q2_3" name="q2" value="3">
+            <label for="q2_3">3 Мое будущее безнадежно, и ничто не может измениться к лучшему.</label>
+        </div>
+
+        <!-- Другие вопросы -->
+        <div class="question">
+            <span>3) Выберите утверждение: </span><br>
+            <input type="radio" id="q3_0" name="q3" value="0">
+            <label for="q3_0">0 Я не чувствую себя неудачником.</label><br>
+            <input type="radio" id="q3_1" name="q3" value="1">
+            <label for="q3_1">1 Я чувствую, что терпел больше неудач, чем другие люди.</label><br>
+            <input type="radio" id="q3_2" name="q3" value="2">
+            <label for="q3_2">2 Когда я оглядываюсь на свою жизнь, я вижу в ней много неудач.</label><br>
+            <input type="radio" id="q3_3" name="q3" value="3">
+            <label for="q3_3">3 Я чувствую, что как личность я - полный неудачник.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 4 -->
+        <div class="question">
+            <span>4) Выберите утверждение: </span><br>
+            <input type="radio" id="q4_0" name="q4" value="0">
+            <label for="q4_0">0 Я получаю столько же удовлетворения от жизни, как раньше.</label><br>
+            <input type="radio" id="q4_1" name="q4" value="1">
+            <label for="q4_1">1 Я не получаю столько же удовлетворения от жизни, как раньше.</label><br>
+            <input type="radio" id="q4_2" name="q4" value="2">
+            <label for="q4_2">2 Я больше не получаю удовлетворения ни от чего.</label><br>
+            <input type="radio" id="q4_3" name="q4" value="3">
+            <label for="q4_3">3 Я полностью не удовлетворен жизнью. и мне все надоело.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 5 -->
+        <div class="question">
+            <span>5) Выберите утверждение: </span><br>
+            <input type="radio" id="q5_0" name="q5" value="0">
+            <label for="q5_0">0 Я не чувствую себя в чем-нибудь виноватым.</label><br>
+            <input type="radio" id="q5_1" name="q5" value="1">
+            <label for="q5_1">1 Достаточно часто я чувствую себя виноватым.</label><br>
+            <input type="radio" id="q5_2" name="q5" value="2">
+            <label for="q5_2">2 Большую часть времени я чувствую себя виноватым.</label><br>
+            <input type="radio" id="q5_3" name="q5" value="3">
+            <label for="q5_3">3 Я постоянно испытываю чувство вины.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 6 -->
+        <div class="question">
+            <span>6) Выберите утверждение: </span><br>
+            <input type="radio" id="q6_0" name="q6" value="0">
+            <label for="q6_0">0 Я не чувствую, что могу быть наказанным за что-либо.</label><br>
+            <input type="radio" id="q6_1" name="q6" value="1">
+            <label for="q6_1">1 Я чувствую, что могу быть наказан.</label><br>
+            <input type="radio" id="q6_2" name="q6" value="2">
+            <label for="q6_2">2 Я ожидаю, что могу быть наказан.</label><br>
+            <input type="radio" id="q6_3" name="q6" value="3">
+            <label for="q6_3">3 Я чувствую себя уже наказанным.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 7 -->
+        <div class="question">
+            <span>7) Выберите утверждение: </span><br>
+            <input type="radio" id="q7_0" name="q7" value="0">
+            <label for="q7_0">0 Я не разочаровался в себе.</label><br>
+            <input type="radio" id="q7_1" name="q7" value="1">
+            <label for="q7_1">1 Я разочаровался в себе.</label><br>
+            <input type="radio" id="q7_2" name="q7" value="2">
+            <label for="q7_2">2 Я себе противен.</label><br>
+            <input type="radio" id="q7_3" name="q7" value="3">
+            <label for="q7_3">3 Я себя ненавижу.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 8 -->
+        <div class="question">
+            <span>8) Выберите утверждение: </span><br>
+            <input type="radio" id="q8_0" name="q8" value="0">
+            <label for="q8_0">0 Я знаю, что я не хуже других.</label><br>
+            <input type="radio" id="q8_1" name="q8" value="1">
+            <label for="q8_1">1 Я критикую себя за ошибки и слабости.</label><br>
+            <input type="radio" id="q8_2" name="q8" value="2">
+            <label for="q8_2">2 Я все время обвиняю себя за свои поступки.</label><br>
+            <input type="radio" id="q8_3" name="q8" value="3">
+            <label for="q8_3">3 Я виню себя во всем плохом, что происходит.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 9 -->
+        <div class="question">
+            <span>9) Выберите утверждение: </span><br>
+            <input type="radio" id="q9_0" name="q9" value="0">
+            <label for="q9_0">0 Я никогда не думал покончить с собой.</label><br>
+            <input type="radio" id="q9_1" name="q9" value="1">
+            <label for="q9_1">1 Ко мне приходят мысли покончить с собой, но я не буду их осуществлять.</label><br>
+            <input type="radio" id="q9_2" name="q9" value="2">
+            <label for="q9_2">2 Я хотел бы покончить с собой.</label><br>
+            <input type="radio" id="q9_3" name="q9" value="3">
+            <label for="q9_3">3 Я бы убил себя, если бы представился случай.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 10 -->
+        <div class="question">
+            <span>10) Выберите утверждение: </span><br>
+            <input type="radio" id="q10_0" name="q10" value="0">
+            <label for="q10_0">0 Я плачу не больше, чем обычно.</label><br>
+            <input type="radio" id="q10_1" name="q10" value="1">
+            <label for="q10_1">1 Сейчас я плачу чаще, чем раньше.</label><br>
+            <input type="radio" id="q10_2" name="q10" value="2">
+            <label for="q10_2">2 Теперь я все время плачу.</label><br>
+            <input type="radio" id="q10_3" name="q10" value="3">
+            <label for="q10_3">3 Раньше я мог плакать, а сейчас не могу, даже если мне хочется.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 11 -->
+        <div class="question">
+            <span>11) Выберите утверждение: </span><br>
+            <input type="radio" id="q11_0" name="q11" value="0">
+            <label for="q11_0">0 Сейчас я раздражителен не более, чем обычно.</label><br>
+            <input type="radio" id="q11_1" name="q11" value="1">
+            <label for="q11_1">1 Я более легко раздражаюсь, чем раньше.</label><br>
+            <input type="radio" id="q11_2" name="q11" value="2">
+            <label for="q11_2">2 Теперь я постоянно чувствую, что раздражен.</label><br>
+            <input type="radio" id="q11_3" name="q11" value="3">
+            <label for="q11_3">3 Я стал равнодушен к вещам, которые меня раньше раздражали.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 12 -->
+        <div class="question">
+            <span>12) Выберите утверждение: </span><br>
+            <input type="radio" id="q12_0" name="q12" value="0">
+            <label for="q12_0">0 Я не утратил интереса к другим людям.</label><br>
+            <input type="radio" id="q12_1" name="q12" value="1">
+            <label for="q12_1">1 Я меньше интересуюсь другими людьми, чем раньше.</label><br>
+            <input type="radio" id="q12_2" name="q12" value="2">
+            <label for="q12_2">2 Я почти потерял интерес к другим людям.</label><br>
+            <input type="radio" id="q12_3" name="q12" value="3">
+            <label for="q12_3">3 Я полностью утратил интерес к другим людям.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 13 -->
+        <div class="question">
+            <span>13) Выберите утверждение: </span><br>
+            <input type="radio" id="q13_0" name="q13" value="0">
+            <label for="q13_0">0 Я откладываю принятие решения иногда, как и раньше.</label><br>
+            <input type="radio" id="q13_1" name="q13" value="1">
+            <label for="q13_1">1 Я чаще, чем раньше, откладываю принятие решения.</label><br>
+            <input type="radio" id="q13_2" name="q13" value="2">
+            <label for="q13_2">2 Мне труднее принимать решения, чем раньше.</label><br>
+            <input type="radio" id="q13_3" name="q13" value="3">
+            <label for="q13_3">3 Я больше не могу принимать решения.</label>
+        </div>
+        <div class="question">
+            <span>14) Выберите утверждение: </span><br>
+            <input type="radio" id="q14_0" name="q14" value="0">
+            <label for="q14_0">0 Я не чувствую, что выгляжу хуже, чем обычно.</label><br>
+            <input type="radio" id="q14_1" name="q14" value="1">
+            <label for="q14_1">1 Меня тревожит, что я выгляжу старым и непривлекательным.</label><br>
+            <input type="radio" id="q14_2" name="q14" value="2">
+            <label for="q14_2">2 Я знаю, что в моей внешности произошли существенные изменения, делающие меня непривлекательным.</label><br>
+            <input type="radio" id="q14_3" name="q14" value="3">
+            <label for="q14_3">3 Я знаю, что выгляжу безобразно.</label>
+            </div>
+             <!-- Вопрос 15 -->
+    <div class="question">
+        <span>15) Выберите утверждение: </span><br>
+        <input type="radio" id="q15_0" name="q15" value="0">
+        <label for="q15_0">0 Я могу работать так же хорошо, как и раньше.</label><br>
+        <input type="radio" id="q15_1" name="q15" value="1">
+        <label for="q15_1">1 Мне необходимо сделать дополнительное усилие, чтобы начать делать что-нибудь.</label><br>
+        <input type="radio" id="q15_2" name="q15" value="2">
+        <label for="q15_2">2 Я с трудом заставляю себя делать что-либо.</label><br>
+        <input type="radio" id="q15_3" name="q15" value="3">
+        <label for="q15_3">3 Я совсем не могу выполнять никакую работу.</label>
+    </div>
+
+    <!-- Продолжаем добавлять остальные вопросы -->
+
+    <!-- Вопрос 16 -->
+    <div class="question">
+        <span>16) Выберите утверждение: </span><br>
+        <input type="radio" id="q16_0" name="q16" value="0">
+        <label for="q16_0">0 Я сплю так же хорошо, как и раньше.</label><br>
+        <input type="radio" id="q16_1" name="q16" value="1">
+        <label for="q16_1">1 Сейчас я сплю хуже, чем раньше.</label><br>
+        <input type="radio" id="q16_2" name="q16" value="2">
+        <label for="q16_2">2 Я просыпаюсь на 1-2 часа раньше, и мне трудно заснуть опять.</label><br>
+        <input type="radio" id="q16_3" name="q16" value="3">
+        <label for="q16_3">3 Я просыпаюсь на несколько часов раньше обычного и больше не могу заснуть.</label>
+    </div>
+
+    <!-- Продолжаем добавлять остальные вопросы -->
+
+    <!-- Вопрос 17 -->
+    <div class="question">
+        <span>17) Выберите утверждение: </span><br>
+        <input type="radio" id="q17_0" name="q17" value="0">
+        <label for="q17_0">0 Я устаю не больше, чем обычно.</label><br>
+        <input type="radio" id="q17_1" name="q17" value="1">
+        <label for="q17_1">1 Теперь я устаю быстрее, чем раньше.</label><br>
+        <input type="radio" id="q17_2" name="q17" value="2">
+        <label for="q17_2">2 Я устаю почти от всего, что я делаю.</label><br>
+        <input type="radio" id="q17_3" name="q17" value="3">
+        <label for="q17_3">3 Я не могу ничего делать из-за усталости.</label>
+    </div>
+
+    <!-- Продолжаем добавлять остальные вопросы -->
+
+    <!-- Вопрос 18 -->
+    <div class="question">
+        <span>18) Выберите утверждение: </span><br>
+        <input type="radio" id="q18_0" name="q18" value="0">
+        <label for="q18_0">0 Мой аппетит не хуже, чем обычно.</label><br>
+        <input type="radio" id="q18_1" name="q18" value="1">
+        <label for="q18_1">1 Мой аппетит стал хуже, чем раньше.</label><br>
+        <input type="radio" id="q18_2" name="q18" value="2">
+        <label for="q18_2">2 Мой аппетит теперь значительно хуже.</label><br>
+        <input type="radio" id="q18_3" name="q18" value="3">
+        <label for="q18_3">3 У меня вообще нет аппетита.</label>
+    </div>
+    
+        <!-- Вопрос 19 -->
+        <div class="question">
+            <span>19) Выберите утверждение: </span><br>
+            <input type="radio" id="q19_0" name="q19" value="0">
+            <label for="q19_0">0 Я не потерял веса за последнее время.</label><br>
+            <input type="radio" id="q19_1" name="q19" value="1">
+            <label for="q19_1">1 Я потерял более 2 кг.</label><br>
+            <input type="radio" id="q19_2" name="q19" value="2">
+            <label for="q19_2">2 Я потерял более 5 кг.</label><br>
+            <input type="radio" id="q19_3" name="q19" value="3">
+            <label for="q19_3">3 Я потерял более 7 кг.</label>
+        </div>
+
+        <!-- Продолжаем добавлять остальные вопросы -->
+
+        <!-- Вопрос 20 -->
+        <div class="question">
+            <span>20) Выберите утверждение: </span><br>
+            <input type="radio" id="q20_0" name="q20" value="0">
+            <label for="q20_0">0 Я не беспокоюсь о своем здоровье больше, чем обычно.</label><br>
+            <input type="radio" id="q20_1" name="q20" value="1">
+            <label for="q20_1">1 Я обеспокоен своим здоровьем больше, чем обычно.</label><br>
+            <input type="radio" id="q20_2" name="q20" value="2">
+            <label for="q20_2">2 Я очень обеспокоен своим здоровьем.</label><br>
+            <input type="radio" id="q20_3" name="q20" value="3">
+            <label for="q20_3">3 Я настолько обеспокоен своим здоровьем, что не могу думать ни о чем другом.</label>
+        </div>
+        <button class="submit-btn" onclick="calculateTotalScore()">Получить результат</button>
+
+        <div class="result"></div> <!-- Этот элемент нужен для вывода результатов -->
+    </div>
+
+    <script>
+          // Функция для подсчета общего балла
+    function calculateTotalScore() {
+        let totalScore = 0;
+        
+        // Суммируем значения выбранных ответов
+        const answers = document.querySelectorAll('input[type="radio"]:checked');
+        answers.forEach(answer => {
+            totalScore += parseInt(answer.value);
+        });
+        
+        return totalScore;
+    }
+
+    // Функция для определения уровня депрессии
+    function determineDepressionLevel(totalScore) {
+        if (totalScore >= 0 && totalScore <= 9) {
+            return "отсутствие депрессивных симптомов";
+        } else if (totalScore >= 10 && totalScore <= 15) {
+            return "легкая депрессия (субдепрессия)";
+        } else if (totalScore >= 16 && totalScore <= 19) {
+            return "умеренная депрессия";
+        } else if (totalScore >= 20 && totalScore <= 29) {
+            return "выраженная депрессия (средней тяжести)";
+        } else if (totalScore >= 30 && totalScore <= 63) {
+            return "тяжелая депрессия";
+        }
+    }
+
+    // Функция для определения уровня по субшкалам
+    function determineSubscaleLevel(totalScore) {
+        const caScore = totalScore >= 0 ? totalScore <= 39 ? totalScore : 39 : 0;
+        const spScore = totalScore >= 14 ? totalScore - 13 : 0;
+
+        return { "C-A": caScore, "S-P": spScore };
+    }
+
+    // Функция для вывода результатов
+    function displayResults() {
+        const totalScore = calculateTotalScore();
+        const depressionLevel = determineDepressionLevel(totalScore);
+        const subscaleLevels = determineSubscaleLevel(totalScore);
+
+        // Выводим результаты на страницу
+        document.querySelector('.result').innerHTML = `
+            <p>Общий балл: ${totalScore}</p>
+            <p>Уровень депрессии: ${depressionLevel}</p>
+            <p>Субшкалы:</p>
+            <ul>
+                <li>Когнитивно-аффективная субшкала (C-A): ${subscaleLevels['C-A']}</li>
+                <li>Субшкала соматических проявлений депрессии (S-P): ${subscaleLevels['S-P']}</li>
+            </ul>
+        `;
+    }
+
+    // Назначаем обработчик события на кнопку "Отправить"
+    document.querySelector('.submit-btn').addEventListener('click', displayResults);
+</script>
+    </script>
+</body>
+</html>

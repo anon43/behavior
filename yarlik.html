@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навешивание ярлыков</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(46, 67, 87, 1);
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            margin-bottom: 20px;
+        }
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2E4357;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        label:hover {
+            background-color: #49637D;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: #37a4a4;
+        }
+
+        .submit-btn {
+            background-color: #2db2a0;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            
+        }
+        .result1{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        li{
+            color: black;
+            font-weight: 800;
+        }
+        table {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 10px;
+        border: 2px solid white;
+    }
+    .white {
+        color: rgb(255, 255, 255);
+    }
+    </style>
+</head>
+<body>
+        <div style="text-align: center;">
+            <img src="Group 12.png" alt="Test Image" style="width:auto; margin: 20px;">
+        </div>
+        <div class="container">
+            <h1>Навешивание ярлыков</h1>
+            <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                <p style="margin: 0; color: white;">Навешивание ярлыков -
+                    когнитивное искажение при 
+                  котором человек наделяет себя
+                  и окружающих безусловными 
+                  характеристиками без учета 
+                  доказательств, которые могут
+                  привести к менее негативным
+                  выводам.
+                  </p>
+            </div>
+            <h3>Пример:</h3>
+            <div style="background-color: #CCE1F4; padding: 20px; margin-bottom: 20px;">
+                <p style="margin: 0; color: rgb(0, 0, 0);">“Я неудачник”<br>
+                    “Он зануда”</p>
+            </div>
+            <h3>Что можно сделать:</h3>
+            <div style="background-color: #CCE1F4; padding: 20px; margin-bottom: 20px;">
+                <p style="margin: 0; color: rgb(0, 0, 0);">
+                    <ol>
+                         <li>Остановитесь и оцените мысль:</li>
+                             <ul>
+                                <li>Сохраняйте спокойствие. Сделайте глубокий вдох и отвлекитесь на несколько минут.</li>
+                                <li>Существуют ли доказательства, подтверждающие эту мысль?</li>
+                                <li>Есть ли альтернативные объяснения?</li>
+                                <li>Смогу ли я справиться с этим, если это правда?</li>
+                            </ul>
+                        <li>Поставьте себя на место друга:</li>
+                            <ul>
+                                <li>Представьте, что ваш друг переживает подобное.</li>
+                                <li>Какой совет вы бы ему дали?</li>
+                            </ul>
+                    </ol>
+                </p>
+             </div>
+             <h2>Практические упражнения:</h2>
+             <div style="background-color: #CCE1F4; padding: 20px; margin-bottom: 20px;">
+                 <p style="margin: 0; color: rgb(0, 0, 0);">
+                     <ol>
+                          <li>Вам понадобится:</li>
+                              <ul>
+                                 <li>Лист бумаги</li>
+                                 <li>Ручка</li>
+                                 <li>Спокойное место для концентрации</li>
+                             </ul>
+                     </ol>
+                 </p>
+              </div>
+            <div class="result">
+                <div class="res" style="background-color: #464d546f; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                    <h2>1. Анализ "За" и "Против":</h2>
+                    <p>- Разделите лист бумаги пополам на две колонки.</p>
+                    <p>- В левую колонку запишите все аргументы "За" ваше суждение.</p>
+                    <p>- В правую колонку запишите все аргументы "Против".</p>
+                    <p><h3>Пример:</h3></p>
+                    <p>
+                        <table border="1" cellpadding="10">
+                            <thead>
+                                <tr>
+                                    <th>За</th>
+                                    <th>Против</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>"Я не справлюсь с этой задачей."</td>
+                                    <td>"У меня есть опыт решения подобных задач."</td>
+                                </tr>
+                                <tr>
+                                    <td>"Я недостаточно умный."</td>
+                                    <td>"Я много работаю и постоянно учусь."</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </div>
+            </div>
+            <div class="result">
+                <div class="res" style="background-color: #464d546f; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                     <h2>2. Оценка качества доказательств:</h2>
+                    <p>- Из упражнения 1 выпишите все аргументы, подтверждающие обесценивание.</p>
+                    <p>- Оцените насколько эти аргументы верны и функциональны.</p>
+                    <p>- Используйте вопросы из раздела "1. Остановитесь и оцените".</p>
+                </div>
+            </div>
+            <div class="result">
+                <div class="res" style="background-color: #464d546f; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                    <h2>3. Проверка на практике:</h2>
+                    
+                       <P>Сформулируйте:</P>
+                      <p > 
+                             <ul>
+                                <li style="color: white;">Что должно произойти, чтобы вы были абсолютно уверены в своей правоте?</li>
+                            </ul>
+                       <P>Проведите эксперимент:</P>
+                            <ul>
+                               <li style="color: white;">Проверьте свою мысль на практике.</li>
+                               <li style="color: white;">Сделайте выводы.</li>
+                           </ul>
+                    </p>
+                    <p>Пример:</p>
+                    <p>
+                        <ul>
+                            <li style="color: white;">Вопрос: "Я не справлюсь с этой задачей."</li>
+                            <li style="color: white;">Эксперимент: Разбивайте задачу на мелкие шаги и выполняйте их поэтапно.</li>
+                            <li style="color: white;">Вывод: "Я могу справиться с этой задачей, если буду действовать последовательно."</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="res" style="background-color: #464d546f; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                    <h2>4. Скрытые убеждения:</h2>
+                    <p>- Закончите предложение: "Это не имеет значения, потому что..."</p>
+                    <p>- Проанализируйте это убеждение.</p>
+                    <p>- Оспорьте их с помощью вопросов из раздела "1. Остановитесь и оцените".</p>
+                    <p>- Используйте "Оценку качества" из упражнения 2.</p>
+                </div>
+             </div>
+
+            <div class="result">
+                <div class="res" style="background-color: #464d546f; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                    <h2>5. Когнитивные искажения:</h2>
+                    <p>- Подкрепляют ли ваши суждения когнитивные искажения?</p>
+                 </div>
+            </div>
+        </div>
+        <div class="result1">
+            <div class="res" style="background-color: #464d5400; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+                <h2>Опасность навешивания ярлыков</h2>
+                    <p>Навешивание ярлыков на себя и других – деструктивная и дисфункциональная привычка.</p>
+                    <p>Оценивайте ситуации и людей объективно, используя эмпатию и самосострадание.</p>
+                    <p>Стремитесь к более глубокому пониманию себя и других людей.</p>
+            </div>
+        </div>
+    
+</body>
+</html>
