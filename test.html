@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Большая пятерка</title>
+    <title>Тест на совместимость</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,7 +33,7 @@
         }
 
         .question {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .answer {
@@ -47,11 +46,11 @@
 
         label {
             cursor: pointer;
-            display: inline-block;
+            display: block;
             padding: 10px 20px;
             background-color: #2E4357;
             border-radius: 5px;
-            margin-right: 10px;
+            margin-bottom: 10px;
         }
 
         label:hover {
@@ -84,584 +83,209 @@
         }
     </style>
 </head>
-
 <body>
     <div style="text-align: center;">
         <img src="Group 5 (1).png" alt="Test Image" style="width:auto; margin: 20px;">
     </div>
-    
-    
     <div class="container">
-        <h1>Большая пятерка</h1>
+        <h1>Тест на совместимость</h1>
         <div style="background-color: inherit; border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
-        <p style="margin: 0; color: white;">Тест "большая пятерка" обычно используется для оценки различных качеств или характеристик. В контексте тестирования, "большая пятерка" может относиться к выбору пяти наиболее важных или значимых аспектов или вопросов для оценки.</p>
-    </div>
-    <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
-        <h2>Пояснение к выбору ответов</h2>
-        <p>0 – нет, это не обо мне;</p>
-        <p>1 – иногда это обо мне, иногда – нет;</p>
-        <p>2 – да, это точно обо мне.</p>
+            <p style="margin: 0; color: white;">
+                Психологическая совместимость партнеров - это совокупность сходств и различий в психологических характеристиках двух людей, обуславливающая их способность к длительным и гармоничным отношениям.</p>
         </div>
-        <div class="question">
-            <p>1. Для меня лучший отдых пообщаться в веселой компании.</p>
-            <div class="answer">
+        <div style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
+            <p style="margin: 0; color: white;">Данный тест является упрощенным инструментом для самоанализа ваших отношений.Тест не является заменой профессиональной помощи.
+                Если у вас есть серьезные проблемы в отношениях.</p>
+        </div>
+        <form id="personality-test">
+            <div class="question">
+                <span>Какова ваша разница в возрасте?</span><br>
                 <input type="radio" id="q1_0" name="q1" value="0">
-                <label for="q1_0">0</label>
+                <label for="q1_0">Менее двух лет</label><br>
                 <input type="radio" id="q1_1" name="q1" value="1">
-                <label for="q1_1">1</label>
+                <label for="q1_1">От 2 до 5 лет</label><br>
                 <input type="radio" id="q1_2" name="q1" value="2">
-                <label for="q1_2">2</label>
+                <label for="q1_2">От 6 до 10 лет</label><br>
+                <input type="radio" id="q1_3" name="q1" value="3">
+                <label for="q1_3">Более 10 лет</label>
             </div>
-        </div>
-
-        <!-- Insert the rest of the questions here -->
-
-        <div class="question">
-            <p>2. Я иногда чувствую себя веселым или печальным даже без серьезной причины.</p>
-            <div class="answer">
+            <div class="question">
+                <span>С какой целью вы вступили в отношения?</span><br>
                 <input type="radio" id="q2_0" name="q2" value="0">
-                <label for="q2_0">0</label>
+                <label for="q2_0">Получение ярких позитивных эмоций</label><br>
                 <input type="radio" id="q2_1" name="q2" value="1">
-                <label for="q2_1">1</label>
+                <label for="q2_1">Достижение финансовой и психологической стабильности</label><br>
                 <input type="radio" id="q2_2" name="q2" value="2">
-                <label for="q2_2">2</label>
+                <label for="q2_2">Создание семьи</label><br>
+                <input type="radio" id="q2_3" name="q2" value="3">
+                <label for="q2_3">Получение поддержки</label>
             </div>
-        </div>
-
-        <!-- Repeat the structure below for the rest of the questions -->
-
-        <div class="question">
-            <p>3. Меня очень интересует все новое, что появляется вокруг.</p>
-            <div class="answer">
+            <div class="question">
+                <span>Насколько важен для вас внешний вид вашей второй половинки по шкале от 1 до 10?</span><br>
                 <input type="radio" id="q3_0" name="q3" value="0">
-                <label for="q3_0">0</label>
+                <label for="q3_0">Очень важен, красота у меня в приоритете (10)</label><br>
                 <input type="radio" id="q3_1" name="q3" value="1">
-                <label for="q3_1">1</label>
+                <label for="q3_1">Красота играет определяющее значение, но нет определенных требований к партнеру (7-9)</label><br>
                 <input type="radio" id="q3_2" name="q3" value="2">
-                <label for="q3_2">2</label>
+                <label for="q3_2">Важно, чтобы человек был приятным внешне и внутренне (4-6)</label><br>
+                <input type="radio" id="q3_3" name="q3" value="3">
+                <label for="q3_3">Красота не важна — важны другие качества (0-3)</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>4. Я всегда осуществляю то, что запланировал.</p>
-            <div class="answer">
-                <input type="radio" id="q4_0" name="q4" value="0">
-                <label for="q4_0">0</label>
-                <input type="radio" id="q4_1" name="q4" value="1">
-                <label for="q4_1">1</label>
-                <input type="radio" id="q4_2" name="q4" value="2">
-                <label for="q4_2">2</label>
+            <div class="question">
+            <span>Часто ли вы занимаетесь чем-то вместе? Много ли у вас совместных дел?</span><br>
+            <input type="radio" id="q4_0" name="q4" value="0">
+            <label for="q4_0">Очень много совместных дел, все делаем вместе</label><br>
+            <input type="radio" id="q4_1" name="q4" value="1">
+            <label for="q4_1">Что-то делаем вместе, но иногда находимся порознь и занимаемся своими делами</label><br>
+            <input type="radio" id="q4_2" name="q4" value="2">
+            <label for="q4_2">У нас разные сферы интересов, но нам это не мешает</label><br>
+            <input type="radio" id="q4_3" name="q4" value="3">
+            <label for="q4_3">Мы совсем разные</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>5. Когда я с кем-то в ссоре, то обычно сам делаю первый шаг, чтобы помириться.</p>
-            <div class="answer">
-                <input type="radio" id="q5_0" name="q5" value="0">
-                <label for="q5_0">0</label>
-                <input type="radio" id="q5_1" name="q5" value="1">
-                <label for="q5_1">1</label>
-                <input type="radio" id="q5_2" name="q5" value="2">
-                <label for="q5_2">2</label>
+            <div class="question">
+            <span>Как часто у вас бывают разногласия? Как вы их решаете?</span><br>
+            <input type="radio" id="q5_0" name="q5" value="0">
+            <label for="q5_0">Постоянно спорим даже из-за мелочей, и ссора продолжается, пока мы не решим, кто из нас прав</label><br>
+            <input type="radio" id="q5_1" name="q5" value="1">
+            <label for="q5_1">Бывает, что в каких-то вопросах не можем прийти к компромиссу, но быстро находим решение</label><br>
+            <input type="radio" id="q5_2" name="q5" value="2">
+            <label for="q5_2">У нас есть проблемы, но мы обсуждаем их крайне редко</label><br>
+            <input type="radio" id="q5_3" name="q5" value="3">
+            <label for="q5_3">Мы не говорим о проблемах друг друга</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>6. Я часто нуждаюсь в друзьях, которые могли бы меня поддержать и утешить.</p>
-            <div class="answer">
-                <input type="radio" id="q6_0" name="q6" value="0">
-                <label for="q6_0">0</label>
-                <input type="radio" id="q6_1" name="q6" value="1">
-                <label for="q6_1">1</label>
-                <input type="radio" id="q6_2" name="q6" value="2">
-                <label for="q6_2">2</label>
+            <div class="question">
+            <span>Есть ли в ваших отношениях ревность и кто является ее источником?</span><br>
+            <input type="radio" id="q6_0" name="q6" value="0">
+            <label for="q6_0">Мы оба довольно ревнивы</label><br>
+            <input type="radio" id="q6_1" name="q6" value="1">
+            <label for="q6_1">Более ревнива женщина</label><br>
+            <input type="radio" id="q6_2" name="q6" value="2">
+            <label for="q6_2">В наших отношениях нет ревности без повода</label><br>
+            <input type="radio" id="q6_3" name="q6" value="3">
+            <label for="q6_3">Большим ревнивцем является мужчина</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>7. У меня легко меняется настроение.</p>
-            <div class="answer">
-                <input type="radio" id="q7_0" name="q7" value="0">
-                <label for="q7_0">0</label>
-                <input type="radio" id="q7_1" name="q7" value="1">
-                <label for="q7_1">1</label>
-                <input type="radio" id="q7_2" name="q7" value="2">
-                <label for="q7_2">2</label>
+            <div class="question">
+            <span>Что вы готовы прощать и что не готовы?</span><br>
+            <input type="radio" id="q7_0" name="q7" value="0">
+            <label for="q7_0">Прощать — самолюбие; не прощать — скучный характер</label><br>
+            <input type="radio" id="q7_1" name="q7" value="1">
+            <label for="q7_1">Прощать — строгость; не прощать — ревность, эгоизм</label><br>
+            <input type="radio" id="q7_2" name="q7" value="2">
+            <label for="q7_2">Прощать — финансовую нестабильность; не прощать — гордость</label><br>
+            <input type="radio" id="q7_3" name="q7" value="3">
+            <label for="q7_3">Прощать — ранимость, слабость; не прощать — ветреность, измены</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>8. Мне кажется, что пословица «все новое – это хорошо забытое старое», неверна.</p>
-            <div class="answer">
-                <input type="radio" id="q8_0" name="q8" value="0">
-                <label for="q8_0">0</label>
-                <input type="radio" id="q8_1" name="q8" value="1">
-                <label for="q8_1">1</label>
-                <input type="radio" id="q8_2" name="q8" value="2">
-                <label for="q8_2">2</label>
+            <div class="question">
+            <span>Настоящему мужчине свойственны следующие качества:</span><br>
+            <input type="radio" id="q8_0" name="q8" value="0">
+            <label for="q8_0">Красота, сила, харизматичность, чувство юмора</label><br>
+            <input type="radio" id="q8_1" name="q8" value="1">
+            <label for="q8_1">Доброта, внимательность, щедрость</label><br>
+            <input type="radio" id="q8_2" name="q8" value="2">
+            <label for="q8_2">Заботливость, самодостаточность</label><br>
+            <input type="radio" id="q8_3" name="q8" value="3">
+            <label for="q8_3">Состоятельность, здоровье, интеллект</label>
             </div>
-        </div>
-
-        <!-- Continue adding questions in the same format -->
-
-        <div class="question">
-            <p>9. Я умею рассчитывать свое время так, что успеваю сделать все запланированное.</p>
-            <div class="answer">
-                <input type="radio" id="q9_0" name="q9" value="0">
-                <label for="q9_0">0</label>
-                <input type="radio" id="q9_1" name="q9" value="1">
-                <label for="q9_1">1</label>
-                <input type="radio" id="q9_2" name="q9" value="2">
-                <label for="q9_2">2</label>
+            <div class="question">
+            <span>Настоящей женщине свойственны следующие качества:</span><br>
+            <input type="radio" id="q9_0" name="q9" value="0">
+            <label for="q9_0">Красота, яркость, эмоциональность</label><br>
+            <input type="radio" id="q9_1" name="q9" value="1">
+            <label for="q9_1">Доброта, страстность</label><br>
+            <input type="radio" id="q9_2" name="q9" value="2">
+            <label for="q9_2">Заботливость, дипломатичность</label><br>
+            <input type="radio" id="q9_3" name="q9" value="3">
+            <label for="q9_3">Мудрость, покорность</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>10. Меня можно назвать человеком мягкосердечным.</p>
-            <div class="answer">
-                <input type="radio" id="q10_0" name="q10" value="0">
-                <label for="q10_0">0</label>
-                <input type="radio" id="q10_1" name="q10" value="1">
-                <label for="q10_1">1</label>
-                <input type="radio" id="q10_2" name="q10" value="2">
-                <label for="q10_2">2</label>
+            <div class="question">
+            <span>Хотелось бы вам быть похожими на свою вторую половинку?</span><br>
+            <input type="radio" id="q10_0" name="q10" value="0">
+            <label for="q10_0">Скорее нет, чем да</label><br>
+            <input type="radio" id="q10_1" name="q10" value="1">
+            <label for="q10_1">Определенно, да</label><br>
+            <input type="radio" id="q10_2" name="q10" value="2">
+            <label for="q10_2">Скорее да, чем нет</label><br>
+            <input type="radio" id="q10_3" name="q10" value="3">
+            <label for="q10_3">Определенно, нет</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>11. Я очень люблю ходить в гости.</p>
-            <div class="answer">
-                <input type="radio" id="q11_0" name="q11" value="0">
-                <label for="q11_0">0</label>
-                <input type="radio" id="q11_1" name="q11" value="1">
-                <label for="q11_1">1</label>
-                <input type="radio" id="q11_2" name="q11" value="2">
-                <label for="q11_2">2</label>
+            <div class="question">
+            <span>Часто ли вы делитесь секретами друг с другом?</span><br>
+            <input type="radio" id="q11_0" name="q11" value="0">
+            <label for="q11_0">Стараюсь делиться, но не всегда выходит</label><br>
+            <input type="radio" id="q11_1" name="q11" value="1">
+            <label for="q11_1">Да, почти всегда делюсь</label><br>
+            <input type="radio" id="q11_2" name="q11" value="2">
+            <label for="q11_2">У нас нет секретов друг от друга, отношения максимально прозрачны</label><br>
+            <input type="radio" id="q11_3" name="q11" value="3">
+            <label for="q11_3">У нас есть секреты, и мы знаем об этом, но не делимся ими</label>
             </div>
-        </div>
-        <div class="question">
-            <p>12. Иногда я волнуюсь так сильно, что не могу усидеть на месте.</p>
-            <div class="answer">
-                <input type="radio" id="q12_0" name="q12" value="0">
-                <label for="q12_0">0</label>
-                <input type="radio" id="q12_1" name="q12" value="1">
-                <label for="q12_1">1</label>
-                <input type="radio" id="q12_2" name="q12" value="2">
-                <label for="q12_2">2</label>
+            <div class="question">
+            <span>Чувствуете ли вы ответственность за свою вторую половинку?</span><br>
+            <input type="radio" id="q12_0" name="q12" value="0">
+            <label for="q12_0">Нет, не чувствую, потому что каждый сам ответственен за себя</label><br>
+            <input type="radio" id="q12_1" name="q12" value="1">
+            <label for="q12_1">Да, есть некая доля ответственности</label><br>
+            <input type="radio" id="q12_2" name="q12" value="2">
+            <label for="q12_2">Да, я чувствую большую ответственность</label><br>
+            <input type="radio" id="q12_3" name="q12" value="3">
+            <label for="q12_3">В этом нет никакой необходимости, потому что мы самостоятельны</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>13. Меня можно назвать человеком очень любопытным.</p>
-            <div class="answer">
-                <input type="radio" id="q13_0" name="q13" value="0">
-                <label for="q13_0">0</label>
-                <input type="radio" id="q13_1" name="q13" value="1">
-                <label for="q13_1">1</label>
-                <input type="radio" id="q13_2" name="q13" value="2">
-                <label for="q13_2">2</label>
+            <div class="question">
+            <span>Много ли у вас общих друзей?</span><br>
+            <input type="radio" id="q13_0" name="q13" value="0">
+            <label for="q13_0">Совсем нет таких</label><br>
+            <input type="radio" id="q13_1" name="q13" value="1">
+            <label for="q13_1">Да, у нас много общих друзей</label><br>
+            <input type="radio" id="q13_2" name="q13" value="2">
+            <label for="q13_2">Их мало, но они есть</label><br>
+            <input type="radio" id="q13_3" name="q13" value="3">
+            <label for="q13_3">Я не могу ответить на этот вопрос, потому что не знаю, с кем дружит любимый человек</label>
             </div>
-        </div>
-
-        <div class="question">
-            <p>14. Думаю, что окружающие считают меня очень ответственным человеком.</p>
-            <div class="answer">
-                <input type="radio" id="q14_0" name="q14" value="0">
-                <label for="q14_0">0</label>
-                <input type="radio" id="q14_1" name="q14" value="1">
-                <label for="q14_1">1</label>
-                <input type="radio" id="q14_2" name="q14" value="2">
-                <label for="q14_2">2</label>
+            <button type="submit" class="submit-btn">Подсчет результатов</button>
+            </form>
+            <div class="result" id="result"></div>
             </div>
-        </div>
+            <script>
+                const form = document.getElementById('personality-test');
+                const resultContainer = document.getElementById('result');
+                
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const formData = new FormData(form);
+                    const answers = [];
+                    for (const entry of formData.entries()) {
+                        answers.push(parseInt(entry[1]));
+                    }
+                    const result = calculateResult(answers);
+                    resultContainer.innerText = result;
+                });
+                
+                function calculateResult(answers) {
+    const counts = [0, 0, 0, 0];
+    answers.forEach(answer => {
+        counts[answer] += 1;
+    });
+    const maxIndex = counts.indexOf(Math.max(...counts));
+    let interpretation = '';
+    switch (maxIndex) {
+        case 0:
+            interpretation = ' Ваши отношения недостаточно прочны, но наполнены яркими эмоциями и страстью. Психологи советуют развивать духовную близость, чтобы отношения продлились долго. У вашего союза огромный потенциал, но есть вероятность того, что любовь быстро угаснет, если не стремиться к взаимопониманию и доверию.';
+            break;
+        case 1:
+            interpretation = 'Отношения идут в правильном направлении. Главное — не терять духовную связь, которая определенно между вами есть. Нужно быть максимально открытыми друг с другом и научиться справляться с проблемами общими усилиями.';
+            break;
+        case 2:
+            interpretation = 'Отношения очень зрелые и стабильные. В них может быть недостаточно страсти и авантюризма, но с этим недостатком легко можно справиться. Такая любовь приносит партнерам максимальный комфорт, поэтому вряд ли она потерпит неудачу в будущем.';
+            break;
+        case 3:
+            interpretation = 'Люди больше стремятся к личному успеху, чем к общему благополучию. Такие отношения могут продолжаться долго, но рано или поздно пути партнеров расходятся. Чтобы этого не произошло, важно избегать эгоизма, чаще общаться друг с другом, ставить общие цели.';
+            break;
+        default:
+            interpretation = 'Произошла ошибка при обработке результатов.';
+    }
+    return interpretation;
+}
 
-        <div class="question">
-            <p>15. Я человек доверчивый.</p>
-            <div class="answer">
-                <input type="radio" id="q15_0" name="q15" value="0">
-                <label for="q15_0">0</label>
-                <input type="radio" id="q15_1" name="q15" value="1">
-                <label for="q15_1">1</label>
-                <input type="radio" id="q15_2" name="q15" value="2">
-                <label for="q15_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>16. Меня часто тянет к приключениям.</p>
-            <div class="answer">
-                <input type="radio" id="q16_0" name="q16" value="0">
-                <label for="q16_0">0</label>
-                <input type="radio" id="q16_1" name="q16" value="1">
-                <label for="q16_1">1</label>
-                <input type="radio" id="q16_2" name="q16" value="2">
-                <label for="q16_2">2</label>
-            </div>
-        </div>
-        <div class="question">
-            <p>17. Однообразие мне очень быстро надоедает.</p>
-            <div class="answer">
-                <input type="radio" id="q17_0" name="q17" value="0">
-                <label for="q17_0">0</label>
-                <input type="radio" id="q17_1" name="q17" value="1">
-                <label for="q17_1">1</label>
-                <input type="radio" id="q17_2" name="q17" value="2">
-                <label for="q17_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>18. У меня широкий круг интересов, разнообразные увлечения.</p>
-            <div class="answer">
-                <input type="radio" id="q18_0" name="q18" value="0">
-                <label for="q18_0">0</label>
-                <input type="radio" id="q18_1" name="q18" value="1">
-                <label for="q18_1">1</label>
-                <input type="radio" id="q18_2" name="q18" value="2">
-                <label for="q18_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>19. Я аккуратен и осмотрителен в словах и в делах.</p>
-            <div class="answer">
-                <input type="radio" id="q19_0" name="q19" value="0">
-                <label for="q19_0">0</label>
-                <input type="radio" id="q19_1" name="q19" value="1">
-                <label for="q19_1">1</label>
-                <input type="radio" id="q19_2" name="q19" value="2">
-                <label for="q19_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>20. Я охотно откликаюсь на самые разнообразные просьбы друзей и знакомых.</p>
-            <div class="answer">
-                <input type="radio" id="q20_0" name="q20" value="0">
-                <label for="q20_0">0</label>
-                <input type="radio" id="q20_1" name="q20" value="1">
-                <label for="q20_1">1</label>
-                <input type="radio" id="q20_2" name="q20" value="2">
-                <label for="q20_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>21. Большинство знаний я получаю из общения с ровесниками, а не из книг.</p>
-            <div class="answer">
-                <input type="radio" id="q21_0" name="q21" value="0">
-                <label for="q21_0">0</label>
-                <input type="radio" id="q21_1" name="q21" value="1">
-                <label for="q21_1">1</label>
-                <input type="radio" id="q21_2" name="q21" value="2">
-                <label for="q21_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>22. Бывает, я чувствую себя очень уставшим без всякой причины.</p>
-            <div class="answer">
-                <input type="radio" id="q22_0" name="q22" value="0">
-                <label for="q22_0">0</label>
-                <input type="radio" id="q22_1" name="q22" value="1">
-                <label for="q22_1">1</label>
-                <input type="radio" id="q22_2" name="q22" value="2">
-                <label for="q22_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>23. Я легко ориентируюсь в неожиданных ситуациях.</p>
-            <div class="answer">
-                <input type="radio" id="q23_0" name="q23" value="0">
-                <label for="q23_0">0</label>
-                <input type="radio" id="q23_1" name="q23" value="1">
-                <label for="q23_1">1</label>
-                <input type="radio" id="q23_2" name="q23" value="2">
-                <label for="q23_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>24. Если мои желания вступают в противоречие с потребностями, то я выбираю не то,
-                что хочу, а то, что должен делать.</p>
-            <div class="answer">
-                <input type="radio" id="q24_0" name="q24" value="0">
-                <label for="q24_0">0</label>
-                <input type="radio" id="q24_1" name="q24" value="1">
-                <label for="q24_1">1</label>
-                <input type="radio" id="q24_2" name="q24" value="2">
-                <label for="q24_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>25. Думаю, что окружающие не считают меня эгоистом.</p>
-            <div class="answer">
-                <input type="radio" id="q25_0" name="q25" value="0">
-                <label for="q25_0">0</label>
-                <input type="radio" id="q25_1" name="q25" value="1">
-                <label for="q25_1">1</label>
-                <input type="radio" id="q25_2" name="q25" value="2">
-                <label for="q25_2">2</label>
-            </div>
-        </div>
-        <div class="question">
-            <p>26. Я человек разговорчивый.</p>
-            <div class="answer">
-                <input type="radio" id="q26_0" name="q26" value="0">
-                <label for="q26_0">0</label>
-                <input type="radio" id="q26_1" name="q26" value="1">
-                <label for="q26_1">1</label>
-                <input type="radio" id="q26_2" name="q26" value="2">
-                <label for="q26_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>27. Считаю, что характеристика «спокойный» – точно не про меня.</p>
-            <div class="answer">
-                <input type="radio" id="q27_0" name="q27" value="0">
-                <label for="q27_0">0</label>
-                <input type="radio" id="q27_1" name="q27" value="1">
-                <label for="q27_1">1</label>
-                <input type="radio" id="q27_2" name="q27" value="2">
-                <label for="q27_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>28. Думаю, что большинство окружающих считает, что я человек творческий, с богатым
-                воображением.</p>
-            <div class="answer">
-                <input type="radio" id="q28_0" name="q28" value="0">
-                <label for="q28_0">0</label>
-                <input type="radio" id="q28_1" name="q28" value="1">
-                <label for="q28_1">1</label>
-                <input type="radio" id="q28_2" name="q28" value="2">
-                <label for="q28_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>29. Полагаю, что назвать меня ленивым нельзя.</p>
-            <div class="answer">
-                <input type="radio" id="q29_0" name="q29" value="0">
-                <label for="q29_0">0</label>
-                <input type="radio" id="q29_1" name="q29" value="1">
-                <label for="q29_1">1</label>
-                <input type="radio" id="q29_2" name="q29" value="2">
-                <label for="q29_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>30. Предпочитаю сотрудничать с окружающими, а не вступать с ними в соперничество.</p>
-            <div class="answer">
-                <input type="radio" id="q30_0" name="q30" value="0">
-                <label for="q30_0">0</label>
-                <input type="radio" id="q30_1" name="q30" value="1">
-                <label for="q30_1">1</label>
-                <input type="radio" id="q30_2" name="q30" value="2">
-                <label for="q30_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>31. Мне нравятся большие шумные компании.</p>
-            <div class="answer">
-                <input type="radio" id="q31_0" name="q31" value="0">
-                <label for="q31_0">0</label>
-                <input type="radio" id="q31_1" name="q31" value="1">
-                <label for="q31_1">1</label>
-                <input type="radio" id="q31_2" name="q31" value="2">
-                <label for="q31_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>32. Меня часто одолевают сомнения по самым разным поводам.</p>
-            <div class="answer">
-                <input type="radio" id="q32_0" name="q32" value="0">
-                <label for="q32_0">0</label>
-                <input type="radio" id="q32_1" name="q32" value="1">
-                <label for="q32_1">1</label>
-                <input type="radio" id="q32_2" name="q32" value="2">
-                <label for="q32_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>33. Я люблю размышлять над причинами и последствиями происходящих в моей жизни
-                событий.</p>
-            <div class="answer">
-                <input type="radio" id="q33_0" name="q33" value="0">
-                <label for="q33_0">0</label>
-                <input type="radio" id="q33_1" name="q33" value="1">
-                <label for="q33_1">1</label>
-                <input type="radio" id="q33_2" name="q33" value="2">
-                <label for="q33_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>34. Когда я поставил перед собой цель, то готов преодолеть большие трудности на пути
-                к ней.</p>
-            <div class="answer">
-                <input type="radio" id="q34_0" name="q34" value="0">
-                <label for="q34_0">0</label>
-                <input type="radio" id="q34_1" name="q34" value="1">
-                <label for="q34_1">1</label>
-                <input type="radio" id="q34_2" name="q34" value="2">
-                <label for="q34_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>35. Думаю, что я человек щедрый.</p>
-            <div class="answer">
-                <input type="radio" id="q35_0" name="q35" value="0">
-                <label for="q35_0">0</label>
-                <input type="radio" id="q35_1" name="q35" value="1">
-                <label for="q35_1">1</label>
-                <input type="radio" id="q35_2" name="q35" value="2">
-                <label for="q35_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>36. У меня лучше получается работать в обществе других людей, а не в одиночестве.</p>
-            <div class="answer">
-                <input type="radio" id="q36_0" name="q36" value="0">
-                <label for="q36_0">0</label>
-                <input type="radio" id="q36_1" name="q36" value="1">
-                <label for="q36_1">1</label>
-                <input type="radio" id="q36_2" name="q36" value="2">
-                <label for="q36_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>37. Меня легко развеселить, или расстроить.</p>
-            <div class="answer">
-                <input type="radio" id="q37_0" name="q37" value="0">
-                <label for="q37_0">0</label>
-                <input type="radio" id="q37_1" name="q37" value="1">
-                <label for="q37_1">1</label>
-                <input type="radio" id="q37_2" name="q37" value="2">
-                <label for="q37_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>38. Мне нравится узнавать все новое – даже когда это идет вразрез с моими знаниями и
-                убеждениями.</p>
-            <div class="answer">
-                <input type="radio" id="q38_0" name="q38" value="0">
-                <label for="q38_0">0</label>
-                <input type="radio" id="q38_1" name="q38" value="1">
-                <label for="q38_1">1</label>
-                <input type="radio" id="q38_2" name="q38" value="2">
-                <label for="q38_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>39. Прежде чем сделать что-либо, я всегда задумываюсь о возможных последствиях.</p>
-            <div class="answer">
-                <input type="radio" id="q39_0" name="q39" value="0">
-                <label for="q39_0">0</label>
-                <input type="radio" id="q39_1" name="q39" value="1">
-                <label for="q39_1">1</label>
-                <input type="radio" id="q39_2" name="q39" value="2">
-                <label for="q39_2">2</label>
-            </div>
-        </div>
-
-        <div class="question">
-            <p>40. Мне доставляет удовольствие помогать другим людям.</p>
-            <div class="answer">
-                <input type="radio" id="q40_0" name="q40" value="0">
-                <label for="q40_0">0</label>
-                <input type="radio" id="q40_1" name="q40" value="1">
-                <label for="q40_1">1</label>
-                <input type="radio" id="q40_2" name="q40" value="2">
-                <label for="q40_2">2</label>
-            </div>
-        </div>
-    </form>
-</div>
-</body>
-</html>
-
-
-        <button class="submit-btn" onclick="calculateResults()">Узнать результат</button>
-
-        <div class="result" id="result"></div>
-
-    </div>
-
-    <script>
-        function calculateResults() {
-            // Initialize scores for each personality trait
-            let extraversion = 0;
-            let neuroticism = 0;
-            let openness = 0;
-            let conscientiousness = 0;
-            let agreeableness = 0;
-
-            // Get the selected radio button values for each question
-            for (let i = 1; i <= 40; i++) {
-                const value = parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
-                // Assign scores to corresponding personality traits based on question number
-                if (i % 5 === 1) {
-                    extraversion += value;
-                } else if (i % 5 === 2) {
-                    neuroticism += value;
-                } else if (i % 5 === 3) {
-                    openness += value;
-                } else if (i % 5 === 4) {
-                    conscientiousness += value;
-                } else {
-                    agreeableness += value;
-                }
-            }
-
-            // Calculate total score for each trait
-            const totalExtraversion = extraversion;
-            const totalNeuroticism = neuroticism;
-            const totalOpenness = openness;
-            const totalConscientiousness = conscientiousness;
-            const totalAgreeableness = agreeableness;
-
-            // Display the results
-            const resultElement = document.getElementById('result');
-            resultElement.innerHTML = `
-                <p>(I) Экстраверсия – интроверсия: ${totalExtraversion}</p>
-                <p>(II) Нейротизм – эмоциональная устойчивость: ${totalNeuroticism}</p>
-                <p>(III) Открытость – закрытость к новому опыту: ${totalOpenness}</p>
-                <p>(IV) Сознательность – несобранность: ${totalConscientiousness}</p>
-                <p>(V) Доброжелательность – враждебность: ${totalAgreeableness}</p>
-            `;
-            
-        }
-    </script>
-     <div class="result">
-        <div class="res" style=" border: 2px solid white; border-radius: 20px; padding: 20px; margin-bottom: 20px;">
-        <h2>Пояснение к результатам</h2>
-        <p>0 – 3 – низкий уровень выраженности;</p>
-        <p>4 – 6 – ниже среднего;</p>
-        <p>7 – 9 – средний уровень выраженности;</p>
-        <p>10 – 12 – выше среднего;</p>
-        <p>13 – 16 – высокий уровень выраженности;</p>
-        </div>
-        <p><strong>(I) Экстраверсия – интроверсия:</strong> Экстраверсия - это направленность личности на внешний мир, проявляющаяся в общительности, оптимизме и активности. Интроверсия, напротив, характеризуется сдержанностью, трезвым мышлением и ориентацией на дело.</p>
-        <p><strong>(II) Нейротизм – эмоциональная устойчивость:</strong> Нейротизм отражает эмоциональную стабильность или нестабильность. Устойчивые люди проявляют спокойствие и уверенность, в то время как люди с высоким уровнем нейротизма склонны к бурным эмоциональным реакциям.</p>
-        <p><strong>(III) Открытость – закрытость к новому опыту:</strong> Открытость к новому опыту проявляется в интересе к новым идеям и готовности к изменениям, в то время как закрытость характеризуется предпочтением стабильности и некоторой неустойчивостью в убеждениях и интересах.</p>
-        <p><strong>(IV) Сознательность – несобранность:</strong> Сознательные люди обычно дисциплинированны, целеустремлены и надежны, в то время как несобранные люди могут проявлять небрежность и лень.</p>
-        <p><strong>(V) Доброжелательность – враждебность:</strong> Доброжелательные люди склонны к бескорыстной помощи и проявлению доверия, в то время как враждебные люди недоверчивы и склонны воспринимать окружающих как конкурентов.</p>
-    </div>
-</body>
-
-</html>
-
+            </script>
+        </body>
+        </html>
